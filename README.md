@@ -34,10 +34,14 @@ Från "Hello World" till live-projekt på bara 5 månader. En personlig resa som
 gymnasie-presentation/
 ├── index.html              # Landningssida med QR-kod
 ├── slides.html             # Huvudpresentationen (8 slides)
-├── ChasAcademy-logga.png  # Lokal logotyp
-├── Transformers-roboticsound.wav  # Intro-ljud
-├── .github/workflows/
-│   └── deploy.yml         # Auto-deploy till GitHub Pages
+├── assets/
+│   ├── audio/
+│   │   └── Transformers-roboticsound.wav  # Intro-ljud
+│   └── image/
+│       └── ChasAcademy-logga.png          # Lokal logotyp
+├── .github/
+│   └── workflows/
+│       └── deploy.yml      # Auto-deploy till GitHub Pages
 └── README.md
 ```
 
