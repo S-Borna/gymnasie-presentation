@@ -134,7 +134,7 @@ DevOps-student | Chas Academy 2026
 
 - 🌐 Portfolio: [saidborna.com](https://saidborna.com)
 - 💻 GitHub: [@S-Borna](https://github.com/S-Borna)
-- 💼 LinkedIn: [Said Borna](https://linkedin.com/in/saidborna)
+- 💼 LinkedIn: [Said Borna](https://www.linkedin.com/in/saidborna)
 
 ---
 
