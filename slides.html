@@ -466,20 +466,26 @@
                 font-size: 5em;
             }
 
-            /* Mobile responsive logos */
+            /* Mobile responsive intro */
             .tech-logo {
-                width: 35px;
-                height: 35px;
+                width: 28px !important;
+                height: 28px !important;
             }
 
             .chas-logo-img {
-                width: 200px;
-                height: 200px;
+                width: 150px !important;
+                height: 150px !important;
             }
 
             .presents-text {
-                font-size: 1.2rem;
-                letter-spacing: 6px;
+                font-size: 1rem;
+                letter-spacing: 4px;
+                margin-top: 20px;
+            }
+
+            .start-prompt {
+                bottom: 40px;
+                font-size: 0.75rem;
             }
         }
 
@@ -865,11 +871,13 @@
         const transformerSound = document.getElementById('transformerSound');
         let animationStarted = false;
 
+        // Detect mobile for responsive sizing
+        const isMobileDevice = window.innerWidth <= 768;
+        
         // Logo positions around the center in a CIRCLE (outer ring around Chas logo)
-        // Radius 320px = the outermost blue circle of the Chas badge
-        // Logo animation spans 7 seconds (~0.35s between each logo), music plays 12 seconds
+        // Radius: 320px on desktop, 140px on mobile
         const numLogos = 20;
-        const radius = 320;
+        const radius = isMobileDevice ? 140 : 320;
         const logoPositions = [
             // DevOps tools - top arc
             { id: 'logo-docker', endX: Math.cos(0 * Math.PI / 10 - Math.PI / 2) * radius, endY: Math.sin(0 * Math.PI / 10 - Math.PI / 2) * radius, delay: 0 },
