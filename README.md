@@ -62,7 +62,7 @@ Workflow i `.github/workflows/deploy.yml` deplojar automatiskt vid:
 - Push till `main`-branch
 - Manuell trigger via Actions-fliken
 
-**URL blir:** `https://[username].github.io/gymnasie-presentation/`
+**URL blir:** `https://s-borna.github.io/gymnasie-presentation/`
 
 ### 💻 Lokal Utveckling
 
@@ -133,7 +133,7 @@ python3 -m http.server 8000
 DevOps-student | Chas Academy 2026
 
 - 🌐 Portfolio: [saidborna.com](https://saidborna.com)
-- 💻 GitHub: [@saidborna](https://github.com/saidborna)
+- 💻 GitHub: [@S-Borna](https://github.com/S-Borna)
 - 💼 LinkedIn: [Said Borna](https://linkedin.com/in/saidborna)
 
 ---
@@ -144,7 +144,7 @@ DevOps-student | Chas Academy 2026
 - [ ] `.github/workflows/deploy.yml` finns på plats
 - [ ] Settings → Pages → Source: **"GitHub Actions"**
 - [ ] Push till `main` → Kolla **Actions-fliken** för status
-- [ ] Besök: `https://[username].github.io/gymnasie-presentation/`
+- [ ] Besök: `https://s-borna.github.io/gymnasie-presentation/`
 
 ---
 
