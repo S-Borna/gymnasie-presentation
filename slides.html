@@ -1007,10 +1007,15 @@
             }
         });
 
-        // Auto-start animation after page load
-        window.addEventListener('load', function () {
-            setTimeout(playIntroAnimation, 500);
-        });
+        // Detect mobile device
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+        // Auto-start on desktop, wait for click on mobile (mobile requires user interaction for audio)
+        if (!isMobile) {
+            window.addEventListener('load', function () {
+                setTimeout(playIntroAnimation, 500);
+            });
+        }
     </script>
 </body>
 
