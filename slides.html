@@ -465,6 +465,22 @@
             .big-number {
                 font-size: 5em;
             }
+
+            /* Mobile responsive logos */
+            .tech-logo {
+                width: 35px;
+                height: 35px;
+            }
+
+            .chas-logo-img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .presents-text {
+                font-size: 1.2rem;
+                letter-spacing: 6px;
+            }
         }
 
         /* Speaker notes styling (press 'S' to see) */
@@ -893,14 +909,23 @@
             animationStarted = true;
 
             // Play real transformer sound from second 5 to 17 (12 seconds)
-            try {
-                transformerAudio.currentTime = 5; // Start at 5 seconds
-                transformerAudio.play();
-                // Stop at 17 seconds (after 12 seconds of playback)
-                setTimeout(() => {
-                    transformerAudio.pause();
-                }, 12000);
-            } catch (e) { console.log('Audio error:', e); }
+            // Force play for mobile - user interaction enables audio
+            transformerAudio.currentTime = 5; // Start at 5 seconds
+            const playPromise = transformerAudio.play();
+
+            if (playPromise !== undefined) {
+                playPromise
+                    .then(() => {
+                        // Audio started successfully
+                        setTimeout(() => {
+                            transformerAudio.pause();
+                        }, 12000);
+                    })
+                    .catch(e => {
+                        console.log('Audio autoplay prevented:', e);
+                        // Fallback: try again after user interaction
+                    });
+            }
 
             const centerX = window.innerWidth / 2;
             const centerY = window.innerHeight / 2; // Logos now centered with transform, no offset needed
