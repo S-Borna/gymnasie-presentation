@@ -408,7 +408,7 @@
             text-shadow: 0 0 20px rgba(0, 240, 255, 0.6), 0 0 40px rgba(0, 240, 255, 0.3);
         }
 
-        /* Start prompt */
+        /* Start prompt - hidden on desktop (auto-starts), visible on mobile */
         .start-prompt {
             position: absolute;
             bottom: 60px;
@@ -419,6 +419,7 @@
             color: rgba(255, 255, 255, 0.4);
             animation: pulse-text 2s ease-in-out infinite;
             z-index: 30;
+            display: none;
         }
 
         @keyframes pulse-text {
@@ -484,6 +485,7 @@
             }
 
             .start-prompt {
+                display: block;
                 bottom: 40px;
                 font-size: 0.75rem;
             }
