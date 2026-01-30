@@ -13,7 +13,7 @@ Från "Hello World" till live-projekt på bara 5 månader. En personlig resa som
 ### 🎯 Huvudbudskap
 
 - **IT är för alla** – ålder och bakgrund spelar ingen roll längre
-- **AI som verktyg** – omöjligt utan AI-assistans
+- **AI som verktyg** – game changer
 - **Prompt Engineering** – hemligheten bakom framgång
 - **Förändring är oundviklig** – häng med eller häng efter
 
